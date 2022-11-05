@@ -1,0 +1,77 @@
+.FormContainer{
+    background-color: var(--color-white-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .FormWrapper{
+        background-color:var(--color-white);
+        padding:20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        align-items: center;
+
+        .Logo{
+            color:var(--color-white-purple);
+            font-weight: bold;
+            font-size:24px
+        }
+
+        .Title{
+            color:var(--color-white-purple);
+            font-size:11px
+        }
+
+        .Form{
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+
+            .InputName, .InputEmail, .InputPassword{
+                padding:15px;
+                border:none;
+                width:250px;
+                border-bottom: 1px solid var(--color-white-blue);
+
+                &::placeholder{
+                    color:var(--color-super-gray);
+                }
+            }
+
+            .SignUpButton{
+                background-color:var(--color-purple-blue);
+                color:var(--color-white);
+                padding:10px;
+                font-weight: bold;
+                border:none;
+                cursor: pointer;
+            }
+
+            .InputHidden{
+                display:none;
+            }
+            
+            .LabelContainer{
+                display:flex;
+                align-items: center;
+                gap:10px;
+                color:var(--color-light-blue);
+                font-size: 12px;
+                cursor: pointer;
+
+                img{
+                    width: 32px;
+                }
+            }
+        }
+
+        .Description{
+            color:var(--color-white-purple);
+            font-size:12px;
+            margin-top:10px;
+        }
+    }
+}
